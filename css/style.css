@@ -1,0 +1,79 @@
+body{
+    font-family: "Quicksand", sans-serif; 
+    color: black;
+    font-size: 18px; 
+    padding-top: 15px; 
+
+    background-image: url("../images/pidgeon-background.jpg"); 
+    background-repeat: no-repeat;
+    background-color: #dddddd;
+    /* Added padding here to add space between the table and page */
+    padding: 15px;
+}
+h1{
+    font-size: 2em;
+    line-height: 1.5;
+    color: #c12258; 
+}
+a{
+    font-size: 18px;
+    color: #c12258;
+    text-decoration: underline;
+}
+*:focus{
+    border: 1px solid red;
+}
+table{
+    border-collapse: separate;
+    border-radius: 10px; 
+    border-spacing: 0;
+    border: 2px solid black;
+    /* Added overflow to keep the curved border visable*/
+    overflow: hidden; 
+}
+th{
+    width: 150px; 
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+thead{
+   color: white;  
+   text-align: center;
+   text-transform: uppercase;
+   background-color: #7e0830;
+}
+td{
+    text-align: center;
+    border-bottom: 2px solid black; 
+    padding: 15px;
+}
+tr:nth-child(even){
+    background-color: #dddddd; 
+}
+tr:nth-child(odd){
+    background-color: transparent;
+}
+tr:hover{
+    background-color: #fab9cf; 
+}
+th.colhead:first-child{
+    border-top-left-radius: 10px;
+}
+th.colhead:last-child{
+    border-top-right-radius: 10px;
+}
+tr.rowhead:first-child{
+    border-bottom-left-radius: 10px
+}
+tr.rowhead:last-child{
+    border-bottom-right-radius: 10px
+}
+footer{
+    color: white;
+    background-color: black;  
+    text-align: center;
+    min-height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
